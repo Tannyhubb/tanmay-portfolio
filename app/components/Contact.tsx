@@ -90,63 +90,36 @@ export default function Contact() {
           gap: '2rem'
         }}
       >
-        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-          <a 
-            href="https://www.instagram.com/tanmaybhardwaj_/" 
-            target="_blank" 
-            rel="noreferrer" 
-            style={{ 
-              fontSize: "0.75rem", 
-              color: "rgba(255,255,255,0.3)", 
-              textDecoration: "none", 
-              textTransform: "uppercase", 
-              letterSpacing: "0.15em", 
-              fontFamily: 'var(--font-mono)', 
-              transition: 'color 0.3s ease' 
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
-            onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.3)'}
-          >
-            Instagram
-          </a>
-          
-          <a 
-            href="https://www.linkedin.com/in/tanmay-bhardwaj-gtm" 
-            target="_blank" 
-            rel="noreferrer" 
-            style={{ 
-              fontSize: "0.75rem", 
-              color: "rgba(255,255,255,0.3)", 
-              textDecoration: "none", 
-              textTransform: "uppercase", 
-              letterSpacing: "0.15em", 
-              fontFamily: 'var(--font-mono)', 
-              transition: 'color 0.3s ease' 
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
-            onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.3)'}
-          >
-            LinkedIn
-          </a>
-
-          <a 
-            href="https://x.com/TanmayBhardwajj" 
-            target="_blank" 
-            rel="noreferrer" 
-            style={{ 
-              fontSize: "0.75rem", 
-              color: "rgba(255,255,255,0.3)", 
-              textDecoration: "none", 
-              textTransform: "uppercase", 
-              letterSpacing: "0.15em", 
-              fontFamily: 'var(--font-mono)', 
-              transition: 'color 0.3s ease' 
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
-            onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.3)'}
-          >
-            X (Twitter)
-          </a>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          {[
+            { label: 'Email', href: 'mailto:work@buildyour.company' },
+            { label: 'Instagram', href: 'https://www.instagram.com/tanmaybhardwaj_/' },
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/tanmay-bhardwaj-gtm' },
+            { label: 'X (Twitter)', href: 'https://x.com/TanmayBhardwajj' }
+          ].map((link, i) => (
+            <motion.a 
+              key={i}
+              href={link.href}
+              target={link.label === 'Email' ? "_self" : "_blank"}
+              rel={link.label === 'Email' ? undefined : "noreferrer"}
+              whileHover={{ y: -2, background: 'rgba(255,255,255,0.08)', borderColor: 'rgba(255,255,255,0.3)', color: '#fff' }}
+              transition={{ duration: 0.2 }}
+              style={{ 
+                padding: '0.6rem 1.2rem',
+                borderRadius: '100px',
+                border: '1px solid rgba(255,255,255,0.08)',
+                background: 'rgba(255,255,255,0.02)',
+                fontSize: "0.75rem", 
+                color: "rgba(255,255,255,0.5)", 
+                textDecoration: "none", 
+                textTransform: "uppercase", 
+                letterSpacing: "0.15em", 
+                fontFamily: 'var(--font-mono)', 
+              }}
+            >
+              {link.label}
+            </motion.a>
+          ))}
         </div>
       </motion.div>
     </section>
