@@ -432,14 +432,28 @@ img, svg { display: block; max-width: 100%; }
 /* ═══════════════════════════════════════════════════
    RESPONSIVE OVERRIDES
 ═══════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .comp-split, .project-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   /* Simplify rendering on mobile for perfectly smooth 60fps */
   body::after { opacity: 0.015; }
   .contact-scene { text-align: left; align-items: flex-start; justify-content: flex-start; }
   .contact-inner { align-items: flex-start; text-align: left; }
   .contact-links { justify-content: flex-start; flex-direction: column; gap: 1.5rem; }
+  
+  /* Navigation adjustment */
+  .nav-links { gap: 1rem; }
+  
+  /* Ensure popovers don't overflow screen */
+  .glass-popover {
+    max-width: 90vw;
+  }
 }
-
 /* ═══════════════════════════════════════════════════
    REDUCED MOTION
 ═══════════════════════════════════════════════════ */

@@ -81,7 +81,7 @@ export default function Contact() {
         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2, delay: 0.5 }}
         style={{ 
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           alignItems: 'center',
           width: '100%',
           paddingTop: '2rem',
@@ -90,7 +90,7 @@ export default function Contact() {
           gap: '2rem'
         }}
       >
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', width: '100%' }}>
           {[
             { label: 'Email', href: 'mailto:work@buildyour.company' },
             { label: 'Instagram', href: 'https://www.instagram.com/tanmaybhardwaj_/' },
