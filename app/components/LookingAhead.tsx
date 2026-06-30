@@ -264,8 +264,8 @@ export default function LookingAhead() {
                 </div>
                 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  <span style={{ fontSize: '1rem', color: '#fff', fontWeight: 500 }}>Deep Focus</span>
-                  <span style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)' }}>Atmospheric</span>
+                  <span style={{ fontSize: '1rem', color: '#fff', fontWeight: 500 }}>Mimmi</span>
+                  <span style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)' }}>Ritviz</span>
                   
                   {/* CSS Waveform */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: '3px', height: '20px', marginTop: '0.5rem' }}>
@@ -289,11 +289,12 @@ export default function LookingAhead() {
           </motion.div>
 
           {/* ☕ Daily Ritual (Coffee Cup) */}
-          <motion.div 
-            animate={{ y: [0, -10, 0] }}
-            transition={{ repeat: Infinity, duration: 6, ease: "easeInOut", delay: 2 }}
-            style={{ zIndex: 4, marginRight: '10%' }}
-          >
+          <div style={{ flex: '1 1 auto', display: 'flex', justifyContent: 'flex-end' }}>
+            <motion.div 
+              animate={{ y: [0, -10, 0] }}
+              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut", delay: 2 }}
+              style={{ zIndex: 4 }}
+            >
             <div style={{
               display: 'flex',
               flexDirection: 'column',
@@ -342,6 +343,7 @@ export default function LookingAhead() {
               </div>
             </div>
           </motion.div>
+          </div>
         </div>
 
       </div>

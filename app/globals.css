@@ -216,11 +216,11 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .hero-name {
-  font-size: clamp(4.5rem, 9vw, 12rem);
+  font-size: clamp(3rem, 11vw, 12rem);
   font-weight: 500; letter-spacing: -0.05em;
   line-height: 0.85; display: flex; flex-direction: column;
 }
-.hero-name-line { display: block; overflow: hidden; padding-bottom: 0.25em; }
+.hero-name-line { display: block; overflow: hidden; padding-bottom: 0.25em; white-space: nowrap; }
 .hero-name-line-2 { color: rgba(255,255,255,0.52); }
 
 .hero-char {

@@ -8,13 +8,13 @@ function EducationTimeline() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '1000px', margin: '0 auto', padding: "8rem 0" }}
+      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '1000px', margin: '0 auto', padding: "8rem var(--pad)" }}
     >
       <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#c8a96e', marginBottom: '4rem', textAlign: 'center' }}>
         01. Education
       </h2>
 
-      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '6rem', width: '100%', maxWidth: '700px', paddingLeft: '4rem' }}>
+      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '6rem', width: '100%', maxWidth: '700px', paddingLeft: '2.5rem', paddingRight: '1rem' }}>
         
 
 
@@ -32,12 +32,12 @@ function EducationTimeline() {
             viewport={{ once: true }}
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
             style={{ 
-              position: 'absolute', left: '-4rem', marginLeft: '14px', top: '14px', bottom: 'calc(-6rem - 14px)', width: '2px', 
+              position: 'absolute', left: '-2.5rem', marginLeft: '14px', top: '14px', bottom: 'calc(-6rem - 14px)', width: '2px', 
               background: 'linear-gradient(to bottom, #c8a96e 0%, rgba(255,255,255,0.1) 50%, transparent 100%)',
               transformOrigin: 'top'
             }} 
           />
-          <div style={{ position: 'absolute', left: '-4rem', top: '14px', width: '10px', height: '10px', borderRadius: '50%', background: '#c8a96e', marginLeft: '10px' }} />
+          <div style={{ position: 'absolute', left: '-2.5rem', top: '14px', width: '10px', height: '10px', borderRadius: '50%', background: '#c8a96e', marginLeft: '10px' }} />
           <span className="chapter-meta" style={{ display: 'block', marginBottom: '0.8rem', color: 'rgba(255,255,255,0.6)' }}>2025</span>
           <h3 className="chapter-title" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", letterSpacing: '-0.02em' }}>
             <a href="https://www.google.com/search?q=Richmond+Global+School" target="_blank" rel="noopener noreferrer" className="knowledge-link">
@@ -57,7 +57,7 @@ function EducationTimeline() {
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.7 }}
           style={{ position: 'relative', textAlign: 'left' }}
         >
-          <div style={{ position: 'absolute', left: '-4rem', top: '14px', width: '10px', height: '10px', borderRadius: '50%', background: '#fff', marginLeft: '10px' }} />
+          <div style={{ position: 'absolute', left: '-2.5rem', top: '14px', width: '10px', height: '10px', borderRadius: '50%', background: '#fff', marginLeft: '10px' }} />
           <span className="chapter-meta" style={{ display: 'block', marginBottom: '0.8rem', color: '#c8a96e' }}>Started 2026</span>
           <h3 className="chapter-title" style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "#fff", letterSpacing: '-0.03em' }}>
             <a href="https://sgtuniversity.ac.in/" target="_blank" rel="noopener noreferrer" className="knowledge-link">
@@ -82,13 +82,13 @@ function CommunityTimeline() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '1000px', margin: '0 auto', padding: "8rem 0" }}
+      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '1000px', margin: '0 auto', padding: "8rem var(--pad)" }}
     >
       <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#c8a96e', marginBottom: '4rem', textAlign: 'center' }}>
         02. Community &amp; Volunteering
       </h2>
 
-      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '5rem', width: '100%', maxWidth: '700px', paddingLeft: '4rem' }}>
+      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '5rem', width: '100%', maxWidth: '700px', paddingLeft: '2.5rem', paddingRight: '1rem' }}>
         
 
 
@@ -107,12 +107,12 @@ function CommunityTimeline() {
             viewport={{ once: true }}
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
             style={{ 
-              position: 'absolute', left: '-4rem', marginLeft: '14px', top: '14px', bottom: 'calc(-5rem - 14px)', width: '2px', 
+              position: 'absolute', left: '-2.5rem', marginLeft: '14px', top: '14px', bottom: 'calc(-5rem - 14px)', width: '2px', 
               background: 'linear-gradient(to bottom, rgba(200,169,110,0.5) 0%, rgba(255,255,255,0.1) 100%)',
               transformOrigin: 'top'
             }} 
           />
-          <div style={{ position: 'absolute', left: '-4rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#c8a96e', marginLeft: '11px' }} />
+          <div style={{ position: 'absolute', left: '-2.5rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#c8a96e', marginLeft: '11px' }} />
           <h3 className="chapter-title" style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", letterSpacing: '-0.02em', marginBottom: '0.5rem' }}>
             <a href="https://pehchaanstreetschool.org/" target="_blank" rel="noopener noreferrer" className="knowledge-link">
               Pehchaan Street School
@@ -132,7 +132,7 @@ function CommunityTimeline() {
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.7 }}
           style={{ position: 'relative', textAlign: 'left' }}
         >
-          <div style={{ position: 'absolute', left: '-4rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#fff', marginLeft: '11px' }} />
+          <div style={{ position: 'absolute', left: '-2.5rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#fff', marginLeft: '11px' }} />
           <h3 className="chapter-title" style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", color: "#fff", letterSpacing: '-0.02em', marginBottom: '0.5rem' }}>
             <a href="https://www.firstinspires.org/robotics/frc" target="_blank" rel="noopener noreferrer" className="knowledge-link">
               FIRST Robotics Competition
@@ -156,13 +156,13 @@ function LeadershipTimeline() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '1000px', margin: '0 auto', padding: "8rem 0" }}
+      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '1000px', margin: '0 auto', padding: "8rem var(--pad)" }}
     >
       <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#c8a96e', marginBottom: '4rem', textAlign: 'center' }}>
         03. Leadership &amp; Achievements
       </h2>
 
-      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '5rem', width: '100%', maxWidth: '700px', paddingLeft: '4rem' }}>
+      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '5rem', width: '100%', maxWidth: '700px', paddingLeft: '3rem', paddingRight: '1rem' }}>
         
 
 
@@ -181,12 +181,12 @@ function LeadershipTimeline() {
             viewport={{ once: true }}
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
             style={{ 
-              position: 'absolute', left: '-4rem', marginLeft: '14px', top: '14px', bottom: 'calc(-5rem - 14px)', width: '2px', 
+              position: 'absolute', left: '-2.5rem', marginLeft: '14px', top: '14px', bottom: 'calc(-5rem - 14px)', width: '2px', 
               background: 'linear-gradient(to bottom, rgba(200,169,110,0.5) 0%, rgba(255,255,255,0.1) 100%)',
               transformOrigin: 'top'
             }} 
           />
-          <div style={{ position: 'absolute', left: '-4rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#c8a96e', marginLeft: '11px' }} />
+          <div style={{ position: 'absolute', left: '-2.5rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#c8a96e', marginLeft: '11px' }} />
           <span className="chapter-meta" style={{ display: 'block', marginBottom: '0.5rem', color: 'rgba(255,255,255,0.6)' }}>2023</span>
           <h3 className="chapter-title" style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", letterSpacing: '-0.02em', marginBottom: '0.5rem' }}>
             District Level Tennis Player
@@ -204,7 +204,7 @@ function LeadershipTimeline() {
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.7 }}
           style={{ position: 'relative', textAlign: 'left' }}
         >
-          <div style={{ position: 'absolute', left: '-4rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#fff', marginLeft: '11px' }} />
+          <div style={{ position: 'absolute', left: '-2.5rem', top: '14px', width: '8px', height: '8px', borderRadius: '50%', background: '#fff', marginLeft: '11px' }} />
           <span className="chapter-meta" style={{ display: 'block', marginBottom: '0.5rem', color: '#c8a96e' }}>
             <a href="https://sgtuniversity.ac.in/" target="_blank" rel="noopener noreferrer" className="knowledge-link">SGT University</a>
           </span>
